@@ -1,6 +1,13 @@
-# whereshouldigo
+# Where should I go?
 
-## Project setup
+## Project setup with Docker
+```
+docker-compose up
+```
+
+After the container is up and running you can go to <http://localhost:8081> in your browser.
+
+## Project setup without Docker
 ```
 npm install
 ```
@@ -19,6 +26,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
