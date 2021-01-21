@@ -14,10 +14,9 @@ RUN apk --no-cache --virtual build-dependencies add \
     python \
     make \
     g++ \
-    && npm install \
+    && npm i \
+    && npm i -g @vue/cli@4.5.9 \
     && apk del build-dependencies
-RUN npm install
-RUN npm install @vue/cli@4.5.9 -g
 
 # start app
 CMD ["npm", "run", "serve"]
